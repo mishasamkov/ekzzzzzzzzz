@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Common
-{ 
+{
     public class News
     {
-        public string Img {  get; set; }
+        public string Src { get; set; }
+        public string Img { get; set; }
         public DateTime Date { get; set; }
         public string Title { get; set; }
         public string Text { get; set; }
-        public News(string img, DateTime date,string title,string text )
-        { 
+        public News(string src, string img, DateTime date, string title, string text)
+        {
+            this.Src = src;
             this.Img = img;
             this.Date = date;
             this.Title = title;
